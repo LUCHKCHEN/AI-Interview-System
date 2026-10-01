@@ -1,0 +1,27 @@
+# Extra English words for MeloTTS zh_en. One entry per line:
+# word phone1 phone2 ... tone1 tone2 ...
+softmax s aa f t m ae k s 7 9 7 7 8 7 7 7
+embedding eh m b eh d ih ng 8 7 7 9 7 8 7
+sigmoid s ih g m oy d 7 8 7 9 7 7
+relu r eh l uw 7 8 7 7
+tensor t eh n s er 7 8 7 7 8
+normalization n ao r m ah l ih z ey sh ah n 7 9 7 7 8 7 7 9 7 8 7 7
+normalized n ao r m ah l ay z d 7 9 7 7 8 7 9 7 7
+optimizer aa p t ih m ay z er 8 7 7 8 7 9 7 8
+pytorch p ay t ao r ch 7 9 7 9 7 7
+numpy n ah m p iy 7 8 7 7 9
+resnet r eh z n eh t 7 8 7 9 7 7
+alexnet ae l ih k s n eh t 8 7 8 7 7 9 7 7
+lenet l eh n eh t 7 8 7 9 7
+vgg v iy jh iy jh iy 7 7 7 7 7 7
+mnist eh m n ih s t 8 7 7 8 7 7
+imagenet ih m ih jh ih n eh t 8 7 8 7 8 7 9 7
+lstm eh l eh s t iy eh m 8 7 8 7 7 9 7 7
+ffn eh f eh f eh n 8 7 8 7 8 7
+api ey p iy 9 7 7
+llm eh l eh l eh m 8 7 8 7 9 7
+gpt jh iy p iy t iy 8 7 7 7 7 7
+gpu jh iy p iy y uw 7 7 7 7 7 7
+cpu s iy p iy y uw 7 7 7 7 7 7
+deepseek d iy p s iy k 7 9 7 7 9 7
+openai ow p ah n ey 9 7 8 7 9
