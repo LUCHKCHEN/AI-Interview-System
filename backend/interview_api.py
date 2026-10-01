@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""NEWRAG 动态模拟面试 FastAPI 接口。"""
+"""AI面试系统 FastAPI 接口。"""
 
 import asyncio
 import hashlib
@@ -54,7 +54,7 @@ COMPLETION_MESSAGE = "技术面试结束，接下来进入评分环节。"
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title="NEWRAG 动态模拟面试", version="2.0.0")
+app = FastAPI(title="AI面试系统", version="2.0.0")
 
 
 @app.exception_handler(InterviewError)

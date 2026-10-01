@@ -11,10 +11,10 @@ __pycache__/
 venv/
 
 # Local runtime data and generated artifacts
-NEWRAG/faiss_index/
-NEWRAG/voice_output/
-NEWRAG/tts_dynamic_lexicon.txt
-NEWRAG/models/
+backend/faiss_index/
+backend/voice_output/
+backend/tts_dynamic_lexicon.txt
+backend/models/
 interview_records/
 data/05_自动补强/*.md
 

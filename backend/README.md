@@ -1,6 +1,6 @@
-# NEWRAG 后端
+# AI面试系统后端
 
-NEWRAG 当前包含两套 FastAPI 服务：
+AI面试系统当前包含两套 FastAPI 服务：
 
 - 动态模拟面试服务：`interview_api.py`，默认端口 `8002`。
 - 原语音资料问答服务：`voice_api.py`，默认端口 `8001`。
@@ -23,7 +23,7 @@ test_interview_api.py
 ```
 rag_engine.py          LangChain + FAISS + DeepSeek 文本 RAG
 voice_api.py           语音问答、音频上传下载与本地 TTS
-test_newrag.py
+test_rag_engine.py
 test_voice_api.py
 ```
 
@@ -48,7 +48,7 @@ DeepSeek 不可用时，题目生成和评分自动使用本地规则，评分�
 ## 启动面试服务
 
 ```powershell
-cd NEWRAG
+cd backend
 python interview_api.py
 ```
 
@@ -147,7 +147,7 @@ interview_records/
 ## 启动原语音问答服务
 
 ```powershell
-cd NEWRAG
+cd backend
 python voice_api.py
 ```
 
@@ -156,8 +156,8 @@ python voice_api.py
 ## 测试
 
 ```powershell
-cd NEWRAG
-python -m unittest test_newrag.py test_voice_api.py test_interview_service.py test_interview_api.py -v
+cd backend
+python -m unittest test_rag_engine.py test_voice_api.py test_interview_service.py test_interview_api.py -v
 ```
 
 测试默认不调用真实 ASR、TTS 或 DeepSeek 网络接口。

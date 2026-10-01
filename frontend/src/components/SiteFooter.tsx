@@ -13,7 +13,7 @@ export default function SiteFooter() {
         <div className="footer-column footer-brand">
           <Link className="brand brand-footer" to="/">
             <span className="brand-mark" aria-hidden="true" />
-            NEWRAG
+            AI面试系统
           </Link>
           <p className="footer-description">AI 动态模拟面试系统。简历、岗位与本地知识库驱动的三题语音面试。</p>
           <div className="footer-tech">
@@ -37,7 +37,7 @@ export default function SiteFooter() {
         </div>
       </div>
       <div className="footer-bottom">
-        <span>© 2026 NEWRAG</span>
+        <span>© 2026 AI面试系统</span>
         <span>React · FastAPI · WebSocket</span>
       </div>
     </footer>

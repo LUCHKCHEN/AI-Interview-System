@@ -54,7 +54,7 @@ export default function HomePage() {
           <Reveal>
             <p className="hero-eyebrow">
               <span className="hero-dot" />
-              NEWRAG 动态模拟面试
+              AI面试系统
             </p>
           </Reveal>
           <Reveal delay={80}>
@@ -84,7 +84,7 @@ export default function HomePage() {
             <div className="console-topbar">
               <span className="console-brand">
                 <span className="console-logo" />
-                NEWRAG Interview
+                AI Interview System
               </span>
               <span className="console-session">智境科技 · RAG 应用工程师</span>
               <span className="console-live"><span /> 第 2 题</span>
@@ -137,7 +137,7 @@ export default function HomePage() {
             <p className="section-eyebrow">一整套面试证据链</p>
             <h2 className="section-title">从录音到报告，每一步都在为下一次练习服务。</h2>
             <p className="section-lead">
-              NEWRAG 把面试过程拆成三个可见阶段：先按岗位准备，再通过语音连续作答，最后查看带证据引用的评分报告。
+              AI面试系统把面试过程拆成三个可见阶段：先按岗位准备，再通过语音连续作答，最后查看带证据引用的评分报告。
             </p>
           </Reveal>
           <Reveal delay={140}>
@@ -149,7 +149,7 @@ export default function HomePage() {
         </div>
 
         <Reveal className="report-visual" delay={220}>
-          <div className="report-card-preview" aria-label="NEWRAG 报告界面预览">
+          <div className="report-card-preview" aria-label="AI面试系统报告界面预览">
             <div className="report-preview-header">
               <div>
                 <span className="micro-label">面试报告</span>

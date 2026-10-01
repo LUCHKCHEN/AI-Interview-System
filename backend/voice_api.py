@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""NEWRAG 独立语音问答接口：上传音频 -> 转写 -> RAG -> TTS -> 下载 WAV。"""
+"""AI面试系统独立语音问答接口：上传音频 -> 转写 -> RAG -> TTS -> 下载 WAV。"""
 
 import json
 import logging
@@ -80,7 +80,7 @@ async def lifespan(_: FastAPI):
     yield
 
 
-app = FastAPI(title="NEWRAG 语音问答", version="1.0.0", lifespan=lifespan)
+app = FastAPI(title="AI面试系统语音问答", version="1.0.0", lifespan=lifespan)
 
 
 def _ensure_rag() -> None:

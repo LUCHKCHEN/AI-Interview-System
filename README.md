@@ -1,6 +1,6 @@
 <div align="center">
 
-# NEWRAG
+# AI面试系统
 
 **本地优先的 AI 动态模拟面试系统**
 
@@ -16,7 +16,7 @@
 
 > 截图来自本地开发版本，展示了首页、面试准备和真实后端接入后的界面状态。
 
-![NEWRAG 首页](docs/images/home.png)
+![AI面试系统首页](docs/images/home.png)
 
 ## 目录
 
@@ -35,7 +35,7 @@
 
 ## 项目简介
 
-NEWRAG 是一个面向技术岗位面试准备的本地优先应用。用户上传文字型 PDF 简历或粘贴简历文本，再填写目标岗位、公司和 JD；系统提取岗位能力点，生成三道递进式问题，通过浏览器录音完成语音作答，并在最后一题结束后生成可复盘的四维评分报告。
+AI面试系统是一个面向技术岗位面试准备的本地优先应用。用户上传文字型 PDF 简历或粘贴简历文本，再填写目标岗位、公司和 JD；系统提取岗位能力点，生成三道递进式问题，通过浏览器录音完成语音作答，并在最后一题结束后生成可复盘的四维评分报告。
 
 项目重点不只在于调用大模型，而在于把一次面试拆成完整的工程链路：简历解析、岗位建模、题目生成、实时录音、语音转写、关键词切题、文本降级、评分解释、历史弱项沉淀和本地数据持久化。
 
@@ -110,8 +110,8 @@ flowchart LR
 ### 1. 获取代码
 
 ```bash
-git clone https://github.com/LUCHKCHEN/NEWRAG.git
-cd NEWRAG
+git clone https://github.com/LUCHKCHEN/AI-Interview-System.git
+cd AI-Interview-System
 ```
 
 ### 2. 安装后端
@@ -124,14 +124,14 @@ Windows PowerShell：
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
-pip install -r NEWRAG/requirements.txt
+pip install -r backend/requirements.txt
 ```
 
 macOS / Linux：
 
 ```bash
 source .venv/bin/activate
-pip install -r NEWRAG/requirements.txt
+pip install -r backend/requirements.txt
 ```
 
 ### 3. 配置环境变量
@@ -153,7 +153,7 @@ DEEPSEEK_API_KEY=your_deepseek_api_key
 TTS 模型体积较大，不随仓库提交。将模型目录放到：
 
 ```text
-NEWRAG/models/vits-melo-tts-zh_en/
+backend/models/vits-melo-tts-zh_en/
 ```
 
 模型可从 [csukuangfj/vits-melo-tts-zh_en](https://huggingface.co/csukuangfj/vits-melo-tts-zh_en) 获取。
@@ -163,7 +163,7 @@ NEWRAG/models/vits-melo-tts-zh_en/
 终端一：
 
 ```bash
-cd NEWRAG
+cd backend
 python interview_api.py
 ```
 
@@ -180,7 +180,7 @@ npm run dev
 原语音资料问答服务可使用：
 
 ```bash
-cd NEWRAG
+cd backend
 python voice_api.py
 ```
 
@@ -221,15 +221,15 @@ VITE_WS_BASE_URL=ws://127.0.0.1:8002
 | `GET` | `/api/history/{id}/export` | 导出会话 JSON |
 | `WS` | `/api/interview/sessions/{id}/turns/{turn}/answers` | 录音、转写和切题 |
 
-完整说明见 [NEWRAG/README.md](NEWRAG/README.md)。
+完整说明见 [backend/README.md](backend/README.md)。
 
 ## 测试
 
 后端：
 
 ```bash
-cd NEWRAG
-python -m unittest test_newrag.py test_voice_api.py test_interview_service.py test_interview_api.py -v
+cd backend
+python -m unittest test_rag_engine.py test_voice_api.py test_interview_service.py test_interview_api.py -v
 ```
 
 前端：
@@ -264,7 +264,7 @@ npm run lint
 ```text
 .
 ├─ frontend/                    React + TypeScript + Vite
-├─ NEWRAG/
+├─ backend/
 │  ├─ interview_api.py          FastAPI HTTP/WebSocket 服务
 │  ├─ interview_service.py      简历解析、出题、切题与评分
 │  ├─ interview_store.py        本地会话持久化

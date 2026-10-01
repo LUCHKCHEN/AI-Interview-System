@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""NEWRAG 基础测试，不调用外部 API。"""
+"""AI面试系统 RAG 基础测试，不调用外部 API。"""
 
 import os
 

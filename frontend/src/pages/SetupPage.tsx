@@ -113,7 +113,7 @@ export default function SetupPage() {
           <p className="page-eyebrow">准备一次模拟面试</p>
           <h1>先定义问题，再开始对话。</h1>
           <p className="page-lead">
-            输入简历、目标岗位和公司，NEWRAG 会提取能力差集并生成三题连续面试。
+            输入简历、目标岗位和公司，AI面试系统会提取能力差集并生成三题连续面试。
           </p>
         </Reveal>
       </section>

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""NEWRAG RAG 引擎：LangChain 检索 + FAISS 本地向量库 + DeepSeek 生成。"""
+"""AI面试系统 RAG 引擎：LangChain 检索 + FAISS 本地向量库 + DeepSeek 生成。"""
 
 import os
 import json

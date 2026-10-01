@@ -14,9 +14,9 @@ export default function SiteNav() {
   return (
     <header className="site-nav">
       <div className="nav-inner">
-        <Link className="brand" to="/" aria-label="NEWRAG 首页">
+        <Link className="brand" to="/" aria-label="AI面试系统首页">
           <span className="brand-mark" aria-hidden="true" />
-          <span>NEWRAG</span>
+          <span>AI面试系统</span>
         </Link>
 
         <nav className="desktop-nav" aria-label="主导航">

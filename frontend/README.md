@@ -1,13 +1,13 @@
-# NEWRAG 前端
+# AI面试系统前端
 
-React + TypeScript + Vite 单页应用，已接入 `NEWRAG/interview_api.py` 的真实 HTTP 和 WebSocket 接口。
+React + TypeScript + Vite 单页应用，已接入 `backend/interview_api.py` 的真实 HTTP 和 WebSocket 接口。
 
 ## 开发启动
 
 先启动后端：
 
 ```powershell
-cd NEWRAG
+cd backend
 python interview_api.py
 ```
 
